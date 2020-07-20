@@ -30,7 +30,7 @@ h1 {
 }
 
 .datevenue {
-  margin-left: 57%;
+  margin-left: 55%;
   margin-top: -90px;
   color: #4a8d75;
 }
@@ -49,6 +49,14 @@ h1 {
 .headernav a {
   text-decoration: none;
   color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+#toggle {
+  display: none;
 }
 
 h2 {
@@ -121,4 +129,100 @@ img {
   font-size: 10px;
   margin-left: 18%;
   margin-top: -25px;
+}
+
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-top: -32px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .datevenue {
+    display: inline;
+    text-align: center;
+    font-size: 11px;
+    margin-left: -15px;
+  }
+
+  .label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 300px;
+    font-size: 25px;
+  }
+
+  #toggle:checked + .headernav {
+    display: block;
+  }
+
+  .headernav a {
+    display: block;
+    padding: 5px;
+    border: white 1px solid;
+  }
+
+  .headernav {
+    display: none;
+  }
+
+  #id {
+    display: block;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article1 {
+    text-align: center;
+    width: 80%;
+  }
+  .article2 {
+    width: 80%;
+    text-align: center;
+  }
+  .article3 {
+    width: 80%;
+    text-align: center;
+  }
+
+  .footernav {
+    display: inline;
+  }
+
+  .footernav ul {
+    margin-left: 90px;
+    font-size: 8px;
+    margin-bottom: 12px;
+  }
+
+  .footernav a {
+    padding: 0px 1px 0px 1px;
+  }
+
+  .copyright {
+    margin-left: 10px;
+  }
 }
